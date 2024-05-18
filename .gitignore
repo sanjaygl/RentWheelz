@@ -1,0 +1,22 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/src/RentWheelz.API/bin/Debug
+/src/RentWheelz.API/obj
+/src/RentWheelz.Database/bin/Debug
+/src/RentWheelz.Database/obj/Debug/net8.0
+/src/RentWheelz.Services/bin/Debug
+/src/RentWheelz.Services/obj
+/src/RentWheelz.ViewModel/bin/Debug
+/src/RentWheelz.ViewModel/obj
+/tests/RentWheelz.API.UnitTests/bin/Debug/net8.0
+/tests/RentWheelz.API.UnitTests/obj
+/tests/RentWheelz.Database.UnitTests/bin/Debug/net8.0
+/tests/RentWheelz.Database.UnitTests/obj
+/tests/RentWheelz.Service.UnitTests/bin/Debug/net8.0
+/tests/RentWheelz.Service.UnitTests/obj
+/tests/RentWheelz.ViewModel.UnitTests/bin/Debug/net8.0
+/tests/RentWheelz.ViewModel.UnitTests/obj
+/TestResults/1192cda0-6a01-4e23-80bf-6564f5a5f672
