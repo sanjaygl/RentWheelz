@@ -3,9 +3,11 @@ using RentWheelz.API.Controllers;
 using RentWheelz.Service;
 using RentWheelz.ViewModel;
 using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics.CodeAnalysis;
 
-namespace RentWheelz.API.UnitTests;
+namespace RentWheelz.API.UnitTests.Controllers;
 
+[ExcludeFromCodeCoverage]
 [TestFixture]
 public class AccountControllerTests
 {

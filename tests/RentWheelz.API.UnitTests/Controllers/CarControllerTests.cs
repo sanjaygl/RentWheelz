@@ -4,9 +4,12 @@ using RentWheelz.Service;
 using RentWheelz.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 using RentWheelz.Database.Entities;
+using System.Diagnostics.CodeAnalysis;
 
-namespace RentWheelz.API.UnitTests;
+namespace RentWheelz.API.UnitTests.Controllers;
 
+[ExcludeFromCodeCoverage]
+[TestFixture]
 public class CarControllerTests
 {
     private Mock<ICarService> _carServiceMock;

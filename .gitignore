@@ -20,3 +20,5 @@
 /tests/RentWheelz.ViewModel.UnitTests/bin/Debug/net8.0
 /tests/RentWheelz.ViewModel.UnitTests/obj
 /TestResults/1192cda0-6a01-4e23-80bf-6564f5a5f672
+/src/RentWheelz.Database/obj
+/TestResults

@@ -9,10 +9,6 @@ public class RentWheelzDbContext : DbContext
     {
     }
 
-    protected RentWheelzDbContext()
-    {
-    }
-
     public DbSet<User>? Users { get; set; }
     public DbSet<Car>? Cars { get; set; }
     public DbSet<Reservation>? Reservations { get; set; }

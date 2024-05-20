@@ -2,14 +2,11 @@
 using RentWheelz.Database.Entities;
 using RentWheelz.Service.Repositories;
 using RentWheelz.ViewModel;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Diagnostics.CodeAnalysis;
 
 namespace RentWheelz.Service.UnitTests;
 
+[ExcludeFromCodeCoverage]
 [TestFixture]
 public class UserServiceTests
 {

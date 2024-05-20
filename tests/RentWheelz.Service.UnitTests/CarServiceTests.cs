@@ -2,9 +2,11 @@ using Moq;
 using RentWheelz.Database.Entities;
 using RentWheelz.Service.Repositories;
 using RentWheelz.ViewModel;
+using System.Diagnostics.CodeAnalysis;
 
 namespace RentWheelz.Service.UnitTests;
 
+[ExcludeFromCodeCoverage]
 [TestFixture]
 public class CarServiceTests
 {

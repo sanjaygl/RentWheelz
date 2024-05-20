@@ -1,13 +1,12 @@
 using Microsoft.EntityFrameworkCore;
-using NUnit.Framework;
 using RentWheelz.Database;
 using RentWheelz.Database.Entities;
 using RentWheelz.Service.Repositories;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Diagnostics.CodeAnalysis;
 
 namespace RentWheelz.Service.UnitTests.Repositories;
 
+[ExcludeFromCodeCoverage]
 [TestFixture]
 public class UserRepositoryTests
 {
@@ -38,7 +37,13 @@ public class UserRepositoryTests
         // Arrange
         var userName = "testUser";
         var userEmail = "test@example.com";
-        _context.Users.Add(new User { UserName = userName, UserEmail = userEmail });
+        _context.Users.Add(new User
+        {
+            UserName = userName,
+            UserEmail = userEmail,
+            ProofId = "Proof1", // Add this line
+            UserPassword = "Password1" // Add this line
+        });
         await _context.SaveChangesAsync();
 
         // Act
@@ -54,8 +59,14 @@ public class UserRepositoryTests
     public async Task GetUserByEmailAsync_ReturnsUserWithMatchingEmail()
     {
         // Arrange
-        var userEmail = "test@example.com";
-        _context.Users.Add(new User { UserName = "testUser", UserEmail = userEmail });
+        var userEmail = $"test{Guid.NewGuid()}@example.com";
+        _context.Users.Add(new User
+        {
+            UserName = $"testUser{Guid.NewGuid()}",
+            UserEmail = userEmail,
+            ProofId = "Proof1",
+            UserPassword = "Password1"
+        });
         await _context.SaveChangesAsync();
 
         // Act

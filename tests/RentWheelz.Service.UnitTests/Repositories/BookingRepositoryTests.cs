@@ -2,9 +2,11 @@ using Microsoft.EntityFrameworkCore;
 using RentWheelz.Database;
 using RentWheelz.Database.Entities;
 using RentWheelz.Service.Repositories;
+using System.Diagnostics.CodeAnalysis;
 
 namespace RentWheelz.Service.UnitTests.Repositories;
 
+[ExcludeFromCodeCoverage]
 [TestFixture]
 public class BookingRepositoryTests
 {
